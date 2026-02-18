@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+
+
+.navbar {
+  background: #134611;
+  height: 80px;
+  padding: 0px 100px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logo img {
+height: auto; /* ajuste conforme necessário */ 
+max-width: 189px;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  height: auto;
+  max-width: auto; 
+  margin-left: 0; /* garante que não haja margem extra */ 
+  padding-left: 0; /* remove espaçamento interno */ 
+  padding-right: 300px;
+  justify-content: flex-start;
+
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease;
+  position: relative;
+  
+}
+
+/* Efeito underline animado */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #7CFFB2;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #7CFFB2;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Botões */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  max-width: 300px; 
+}
+
+/* Botão Login */
+.btn-login {
+  background: #134611;
+  border: 1px solid #ccc;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #63e946;
+}
+
+/* Botão Cadastro */
+.btn-register {
+  background: #F9EBE0;
+  color: #000000;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-register:hover {
+  background: #bcb8b5;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+  position: relative;
+  min-height: 90vh;
+  background: #f8f9f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  overflow: hidden;
+  background-image: url("./images/Card.png");
+  background-size: cover; /* cobre todo o elemento */ background-position: center; /* centraliza a imagem */ background-repeat: no-repeat;
+}
+
+/* Fundo com padrão leve */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#F9EBE0 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.hero-logo {
+  background: #014400;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #F9EBE0;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #63e946;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #F9EBE0;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-button {
+  background: #134611;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background: #0e330c;
+}
+
+/* Espaços para imagens futuras */
+.hero-decor {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #e8f5e9;
+  border-radius: 30px;
+}
+
+.hero-left {
+  left: -80px;
+  bottom: 100px;
+  transform: rotate(-15deg);
+  background-image: url("./images/decor_left.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.hero-right {
+  right: -80px;
+  top: 100px;
+  transform: rotate(15deg);
+  background-image: url("./images/decor_right.png");
+  background-size: contain;
+  background-position: center;
+  
+
+}
+
+/* SOBRE NÓS */
+
+.sobre {
+  padding: 100px 80px;
+  background: #ffffff;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sobre-text {
+  flex: 1;
+}
+
+.sobre-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color:#421F0B
+}
+
+.sobre-text h2 span {
+  color: #134611;
+}
+
+.sobre-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.sobre-metrics {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.sobre-metrics h3 {
+  color: #63e946;
+  font-size: 28px;
+}
+
+.sobre-metrics span {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* SERVIÇOS */
+
+.servicos {
+  padding: 100px 80px;
+  background: #f8f9f8;
+  text-align: center;
+}
+
+.servicos-header {
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.servicos-header h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #134611;
+}
+
+.servicos-header p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servico-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.servico-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 15px 35px rgba(0,0,0,0.08);
+}
+
+.servico-card h3 {
+  margin-bottom: 15px;
+  color: #134611;
+}
+
+.servico-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+.footer {
+  background: #0b3d2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
