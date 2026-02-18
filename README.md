@@ -13,13 +13,21 @@ Landing page oficial da **Manguebytes**, desenvolvida em **React + Vite** para g
 ---
 
 ## 📂 Estrutura do projeto
+
 manguebytes-site/
+
 ├── public/              # Arquivos públicos (favicon, index.html, imagens estáticas)
+
 ├── src/
+
 │   ├── assets/          # Imagens e ícones
+
 │   ├── components/      # Componentes reutilizáveis
+
 │   ├── App.jsx          # Componente principal
+
 │   └── main.jsx         # Ponto de entrada do Vite
+
 └── package.json         # Dependências e scripts
 
 
