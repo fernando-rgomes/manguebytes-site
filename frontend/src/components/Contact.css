@@ -1,0 +1,158 @@
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+  background: #0f0f0f;
+  padding: 100px 20px;
+  color: white;
+}
+
+.contact-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+}
+
+/* Top boxes */
+
+.contact-top {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  flex: 1;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.contact-box:hover {
+  background: #222;
+  transform: translateY(-3px);
+}
+
+.contact-box strong {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.contact-box p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Main layout */
+
+.contact-content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Illustration */
+
+.contact-illustration {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-illustration img {
+  width: 90%;
+  
+}
+
+/* Form */
+
+.contact-form {
+  flex: 1;
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 15px;
+  min-width: 320px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2a2a2a;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 1px solid #00c896;
+}
+
+/* Checkbox */
+
+.checkbox-group {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+.checkbox-group a {
+  color: #008A01;
+  text-decoration: none;
+}
+
+/* Button */
+
+.contact-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #008A01, #014400);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-button:hover {
+  opacity: 0.85;
+}
+
+
+.icon img { 
+    width: 24px; 
+    height: 24px; }

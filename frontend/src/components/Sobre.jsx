@@ -5,13 +5,12 @@ function Sobre() {
       <div className="sobre-container">
 
         <div className="sobre-text">
-          <h2>Sobre a <span>MangueBytes</span></h2>
+          <h2>Sobre a <span className="highlight">MangueBytes</span></h2>
 
           <p>
-            A MangueBytes nasce da união entre tecnologia, ciência ambiental
-            e inovação sustentável. Desenvolvemos soluções inteligentes para
-            monitoramento ambiental, análise geoespacial e integração de
-            dispositivos IoT.
+            A MangueBytes é uma deep tech de tecnologia ambiental focada
+            no desenvolvimento de soluções inteligentes para monitoramento
+            e análise de dados geoespaciais.
           </p>
 
           <p>

@@ -1,0 +1,168 @@
+.plans-section {
+  padding: 120px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    -45deg,
+    #007d00,
+    #014400,
+    #195819,
+    #0a2516
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 14s ease infinite;
+}
+
+@keyframes gradientMove {
+ 0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+.plans-title {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 80px;
+  font-weight: 700;
+}
+
+.plans-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* CARD BASE */
+.plan-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 50px 40px;
+  width: 340px;
+  color: white;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Glow suave */
+.plan-card::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle at top, rgba(46, 204, 113, 0.25), transparent 60%);
+  top: -50%;
+  left: -25%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.plan-card:hover::before {
+  opacity: 1;
+}
+
+.plan-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* CARD DESTAQUE */
+.plan-card.highlight {
+  background: white;
+  color: #0f3d1f;
+  border: 2px solid #2ecc71;
+  transform: scale(1.05);
+}
+
+.plan-card.highlight:hover {
+  transform: scale(1.08) translateY(-10px);
+  box-shadow: 0 30px 70px rgba(46, 204, 113, 0.4);
+}
+
+/* Badge */
+.plan-card.highlight::after {
+  content: "Mais Popular";
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  background: #2ecc71;
+  color: white;
+  padding: 6px 40px;
+  font-size: 12px;
+  transform: rotate(45deg);
+  font-weight: bold;
+}
+
+/* TEXTOS */
+.plan-card h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.plan-description {
+  font-size: 15px;
+  margin-bottom: 30px;
+  opacity: 0.85;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.plan-card li {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* PREÇO */
+.plan-price {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.plan-price span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* BOTÃO */
+.plan-button {
+  background: #2ecc71;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.plan-button:hover {
+  background: #27ae60;
+  transform: scale(1.05);
+}
+
+/* Se for card branco */
+.plan-card.highlight .plan-button {
+  background: #014400;
+}
+
+.plan-card.highlight .plan-button:hover {
+  background: #014400;
+}

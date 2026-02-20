@@ -17,9 +17,10 @@ function Hero() {
           para transformar informação ambiental em decisões estratégicas.
         </p>
 
-        <button className="hero-button">
-          Conheça o Ecossistema Mangue
+        <button className="hero-button" onClick={() => window.location.href="#produtos"}>
+        Descubra os Produtos MangueBytes
         </button>
+
       </div>
 
       {/* Espaço para futuras ilustrações */}

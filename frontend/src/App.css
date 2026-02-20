@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
 }
 
 body {
@@ -19,8 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  
 
 }
 
@@ -46,7 +44,6 @@ max-width: 189px;
   max-width: auto; 
   margin-left: 0; /* garante que não haja margem extra */ 
   padding-left: 0; /* remove espaçamento interno */ 
-  padding-right: 300px;
   justify-content: flex-start;
 
 }
@@ -154,7 +151,7 @@ max-width: 189px;
 }
 
 .hero-logo {
-  background: #014400;
+  background: #43e440;
   color: white;
   width: 70px;
   height: 70px;
@@ -166,6 +163,11 @@ max-width: 189px;
   font-size: 30px;
   font-weight: bold;
 }
+.hero-logo img { 
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: contain; /* mantém proporção sem cortar */ 
+}
 
 .hero h1 {
   font-size: 48px;
@@ -174,7 +176,7 @@ max-width: 189px;
   margin-bottom: 20px;
 }
 
-.highlight {
+.highlight{
   color: #63e946;
 }
 
@@ -186,21 +188,21 @@ max-width: 189px;
 }
 
 .hero-button {
-  background: #134611;
-  color: white;
-  border: none;
-  padding: 14px 30px;
-  border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+  background: linear-gradient(135deg, #008A01, #F29F29 );
+  color: #fff; 
+  font-size: 1.1rem;
+  font-weight: bold; 
+  padding: 12px 24px; 
+  border: none; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
-.hero-button:hover {
-  background: #0e330c;
-}
+.hero-button:hover { transform: scale(1.05); 
+  background: linear-gradient(135deg, #008A01, #F29F29 ); }
 
-/* Espaços para imagens futuras */
+/*
 .hero-decor {
   position: absolute;
   width: 250px;
@@ -208,6 +210,7 @@ max-width: 189px;
   background: #e8f5e9;
   border-radius: 30px;
 }
+  
 
 .hero-left {
   left: -80px;
@@ -228,20 +231,24 @@ max-width: 189px;
   
 
 }
+  */
 
 /* SOBRE NÓS */
 
 .sobre {
   padding: 100px 80px;
-  background: #ffffff;
+  background: #f8f9f8;
+  text-align: center
 }
 
 .sobre-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
   max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -251,8 +258,8 @@ max-width: 189px;
 
 .sobre-text h2 {
   font-size: 36px;
-  margin-bottom: 20px;
-  color:#421F0B
+  margin-bottom: 30px;
+  color:#134611
 }
 
 .sobre-text h2 span {
@@ -262,18 +269,20 @@ max-width: 189px;
 .sobre-text p {
   color: #555;
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .sobre-metrics {
   display: flex;
-  gap: 40px;
+  gap: 100px;
   margin-top: 30px;
+  justify-content: center; /* centraliza métricas */
 }
 
 .sobre-metrics h3 {
-  color: #63e946;
-  font-size: 28px;
+  color: #008A01;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .sobre-metrics span {
@@ -339,9 +348,3 @@ max-width: 189px;
 }
 
 
-.footer {
-  background: #0b3d2e;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}

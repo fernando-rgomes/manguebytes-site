@@ -1,0 +1,92 @@
+.footer {
+  width: 100%;
+  background-color: #002b12;
+  color: white;
+}
+
+/* ===== PARTE SUPERIOR ===== */
+.footer-top {
+  background-image: url("/images/Hero.png");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.footer-logo img {
+  width: 278px;
+}
+
+.footer-logo h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.footer-social {
+  margin-top: 20px; 
+  display: flex; 
+  justify-content: center; /* centraliza horizontalmente */ 
+  align-items: center; /* centraliza verticalmente */ 
+  gap: 20px; /* espaço entre os ícones */
+  width: 144px; 
+  height: 41.17px; 
+  margin-left: auto; /* garante centralização */ 
+  margin-right: auto; 
+}
+
+
+.footer-social img {
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== PARTE INFERIOR ===== */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #004d1a;
+}
+
+/* força links totalmente à esquerda */
+.footer-links {
+  display: flex;
+  gap: 30px;
+  margin-right: auto;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+/* força copy totalmente à direita */
+.footer-copy {
+  font-size: 14px;
+  color: white;
+  margin-left: auto;
+}

@@ -4,16 +4,8 @@ import "./Produtos.css"
 function Produtos() {
   const [slide, setSlide] = useState(0)
 
-  const nextSlide = () => {
-    setSlide((prev) => (prev === 1 ? 0 : prev + 1))
-  }
-
-  const prevSlide = () => {
-    setSlide((prev) => (prev === 0 ? 1 : prev - 1))
-  }
-
   return (
-    <section className="produtos">
+    <section id="produtos" className="produtos">
 
       <div className="slider">
 
@@ -26,7 +18,7 @@ function Produtos() {
           <div className="slide">
             <div className="slide-content">
               <div className="text">
-                <h2>Dispositivo IoT Ambiental</h2>
+                <h2>Dispositivo IoT</h2>
                 <p>
                   Equipamento desenvolvido para monitoramento
                   ambiental inteligente, permitindo coleta de dados
@@ -51,7 +43,7 @@ function Produtos() {
                   visualização estratégica e gestão de dados
                   ambientais integrados.
                 </p>
-                <button>Conhecer plataforma</button>
+                <button>Saiba mais</button>
               </div>
 
               <div className="image-2">
