@@ -42,10 +42,12 @@ git clone https://github.com/fernando-rgomes/manguebytes-site.git
 npm install
 
 ### 3. Rodar em ambiente local
+cd frontend
 npm run dev
 
 
 👨‍💻 Autor
+
 Desenvolvido por Fernando Ribeiro.
 
 
