@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const TimeCard = ({ member }) => {
+const TimeCard = ({ member, setIsPaused }) => {
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
@@ -20,7 +20,12 @@ const TimeCard = ({ member }) => {
           {member.socialIcons && (
             <div className="social-icons">
               {member.socialIcons.map((icon, index) => (
-                <a key={index} href={icon.url} target="_blank" rel="noreferrer">
+                <a key={index}
+                 href={icon.url} 
+                 target="_blank" 
+                 rel="noreferrer"
+                 title= {icon.type} // mostra o nome da rede ao passar o mouse
+                 >
                   <img src={icon.icon} alt={icon.type} />
                 </a>
               ))}
@@ -29,7 +34,10 @@ const TimeCard = ({ member }) => {
 
           <button
             className="flip-button"
-            onClick={() => setIsFlipped(true)}
+            onClick={() => {
+              setIsFlipped(true)
+              setIsPaused(true) //pausa
+            }}
           >
             Ver mais
           </button>
@@ -41,7 +49,10 @@ const TimeCard = ({ member }) => {
 
           <button
             className="flip-button"
-            onClick={() => setIsFlipped(false)}
+            onClick={() =>  {
+            setIsFlipped(false)
+            setIsPaused(false) // volta o autoplay
+            }}
           >
             Voltar
           </button>
