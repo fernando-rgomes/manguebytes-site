@@ -36,10 +36,10 @@
 ========================= */
 
 .card {
-  height: 400px;
+  height: auto;
+  min-height: 400px;
   perspective: 1000px;
   flex: 0 0 calc((100% - 60px) / 3);
-  
 }
 
 /* estrutura interna */
@@ -90,9 +90,18 @@
   background: linear-gradient(135deg, #008A01, #014400);
   color: white;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 30px;
   text-align: center;
-  font-size: 1rem;
-  line-height: 1.6;
+
+  font-size: 0.9rem;
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -127,14 +136,27 @@
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #222;
+  color: #000000;
 }
 
-.card span {
-  font-size: 1rem;
-  color: #6a6d78;
-  margin-bottom: 15px;
+.card .job {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #444; /* verde principal da identidade */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
 }
+
+.card .subtitle {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #4e4e4e; /* cinza mais suave */
+  font-style: italic;
+  margin-bottom: 15px;
+  opacity: 0.85;
+}
+
 
 /* =========================
    SOCIAL ICONS
@@ -231,13 +253,81 @@
    RESPONSIVO
 ========================= */
 
-@media (max-width: 768px) {
-  .card {
-    width: 100%;
-    max-width: 350px;
+
+
+@media (max-width: 1024px) {
+
+  .body-team {
+    padding: 80px 30px;
   }
 
   .team-title {
-    font-size: 2.2rem;
+    font-size: 30px;
   }
+
+  .team-grid {
+    gap: 30px;
+  }
+
+}
+
+/* =========================
+   MOBILE CARROSSEL HORIZONTAL
+========================= */
+
+@media (max-width: 768px) {
+
+  .carousel-container {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    transform: none !important;
+    scroll-behavior: smooth;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-snap-align: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .body-team {
+    padding: 50px 15px;
+  }
+
+  .team-title {
+    font-size: 22px;
+  }
+
+  .card-back {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .flip-button {
+    width: 100%;
+  }
+
+  
+
 }

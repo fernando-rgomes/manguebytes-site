@@ -347,4 +347,105 @@ max-width: 189px;
   line-height: 1.6;
 }
 
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
 
+/* Tablets */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 0 40px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .sobre,
+  .servicos {
+    padding: 80px 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 30px 20px;
+    min-height: 80vh;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* SOBRE */
+  .sobre {
+    padding: 60px 20px;
+  }
+
+  .sobre-text h2 {
+    font-size: 26px;
+  }
+
+  .sobre-metrics {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* SERVIÇOS */
+  .servicos {
+    padding: 60px 20px;
+  }
+
+  .servicos-header h2 {
+    font-size: 26px;
+  }
+
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero-button {
+    width: 100%;
+  }
+
+  .servico-card {
+    padding: 30px 20px;
+  }
+
+}

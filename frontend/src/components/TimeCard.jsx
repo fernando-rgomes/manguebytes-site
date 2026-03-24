@@ -14,7 +14,8 @@ const TimeCard = ({ member }) => {
           </div>
 
           <h2>{member.name}</h2>
-          <span>{member.job}</span>
+          <span className="job">{member.job}</span>
+          <span className="subtitle">{member.subtitle}</span>
 
           {member.socialIcons && (
             <div className="social-icons">
