@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1762px;
   aspect-ratio: 1762 / 698;   /* mantém proporção automaticamente */
-  background-image: url("./images/Card.png");
+  background-image: url("/images/Card.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

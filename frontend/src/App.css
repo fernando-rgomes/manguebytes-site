@@ -126,7 +126,7 @@ max-width: 189px;
   text-align: center;
   padding: 40px;
   overflow: hidden;
-  background-image: url("./images/Card.png");
+  background-image: url("/images/Card.png");
   background-size: cover; /* cobre todo o elemento */ background-position: center; /* centraliza a imagem */ background-repeat: no-repeat;
 }
 
